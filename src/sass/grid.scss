@@ -1,0 +1,23 @@
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+ 
+  
+  &.container--page{
+    max-width: 2500px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    margin-bottom: 60rem;
+  
+    
+  }
+
+
+  &.container--input{
+    max-width: 370px;
+    
+  }
+}

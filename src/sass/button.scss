@@ -1,0 +1,59 @@
+%buttonDefaults{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  gap: 20px;
+  font-size: var(--font-primary);
+  color: var(--color-white);
+  transition: .6s;
+
+
+}
+
+
+.button--submit{
+  @extend %buttonDefaults;
+  padding: 0.5rem 1rem;
+  height: 4.8rem;
+  &.button--submit-color{
+    background-color: var(--color-color-primary);
+    &:hover{
+      filter: brightness(0.9);
+  }
+  } 
+
+}
+
+.link--page{
+  @extend %buttonDefaults;
+    padding: 0.5rem 1rem;
+    height: 4.8rem;
+
+    &.link--page-color{
+      background-color: var(--color-grey-1);
+      &:hover{
+        filter: brightness(0.9);
+    }
+    }
+
+   &.link--page-color-2{
+      background-color: var(--color-grey-3);
+   
+      &:hover{
+        filter: brightness(0.9);
+    }
+
+    } 
+
+    &.link--page-color-3{
+      background-color: var(--color-grey-3);
+      width: clamp(6rem, 30vw, 10rem); 
+      &:hover{
+        filter: brightness(0.9);
+    }
+
+    }
+}

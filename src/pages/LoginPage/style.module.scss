@@ -1,0 +1,24 @@
+ %flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexBox{
+@extend %flex;
+  align-items: center;
+  gap: 3.5rem;
+  background-color: var(--color-grey-3);
+  height: 55rem;
+  padding: 2.5rem;
+  box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
+
+  form{
+    @extend %flex;
+    gap: 2.2rem;
+    
+    
+  
+}
+
+}

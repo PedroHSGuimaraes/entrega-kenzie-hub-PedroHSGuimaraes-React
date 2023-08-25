@@ -1,0 +1,124 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  min-width: clamp(800px, 100%,150px );
+  background-color: #212529;
+  border-radius: 0.5rem;
+  margin-right: 60rem;
+  gap: 2rem;
+  padding: 2rem;
+  height: 50rem;
+  overflow-x: auto;
+
+  li {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #121214;
+    width: 100%;
+    height: 4.8rem;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+     
+    h3{
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #fff;
+      
+    
+    }
+
+    p, button {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #fff;
+      opacity: 0.6;
+
+
+    }
+    &:hover {
+      background-color: #1e1e1e;
+    }
+    button:hover{
+      opacity: 2;
+
+    }
+
+  }
+}
+
+  .containerHeader{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: clamp(150px, 100%, 800px);
+    gap: 3rem;
+    margin-top: 3rem;
+    height: 10vh;
+    padding: 2rem;
+  }
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #f8f9fa;
+}
+
+.buttonOpenModal{
+  color: white;
+  font-size: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color:#212529 ;
+  border-radius: 0.5rem;
+
+  &:hover{
+    background-color: #1e1e1e;
+
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .container{
+    margin-right: 0;
+    min-width: 100vw;
+    height: 100%;
+    overflow-x: auto;
+
+    
+
+
+
+
+  }
+  .containerHeader{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    height: 10vh;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #f8f9fa;
+  }
+  .buttonOpenModal{
+    font-size: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color:#212529 ;
+    border-radius: 0.5rem;
+  }
+  
+}
